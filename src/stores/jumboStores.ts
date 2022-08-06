@@ -54,7 +54,7 @@ export const jumboStores = createStore<State>({
     },
     getCitiesByName: (_, getters) => (cityName: string) => {
       const cities: string[] = Array.from(getters.getCities);
-      return cities.filter((city) => city.toLowerCase().includes(cityName));
+      return cities.filter((city) => city.toLowerCase().includes(cityName.toLowerCase()));
     },
     getStores(state): JumboStore[] {
       const jumboStores = state.stores.map((jumboStore) => ({
@@ -69,13 +69,13 @@ export const jumboStores = createStore<State>({
       )[0],
     getStoresByCity: (_, getters) => (cityName: string) =>
       getters.getStores.filter(
-        (jumboStore: JumboStore) => jumboStore.city === cityName
+        (jumboStore: JumboStore) => jumboStore.city.toLowerCase() === cityName.toLowerCase()
       ),
     getStoresBySearchTerm: (_, getters) => (searchTerm: string) =>
       getters.getStores.filter(
         (jumboStore: JumboStore) =>
-          jumboStore.addressName.toLowerCase().includes(searchTerm) ||
-          jumboStore.city.toLowerCase().includes(searchTerm)
+          jumboStore.addressName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          jumboStore.city.toLowerCase().includes(searchTerm.toLowerCase())
       ),
   },
   mutations: {
