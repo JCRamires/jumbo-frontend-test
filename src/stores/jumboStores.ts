@@ -70,16 +70,16 @@ export const getters: GetterTree<State, any> = {
     }));
     return jumboStores;
   },
-  getStoreById: (_, getters) => (storeId: string) =>
+  getStoreById: (_, getters) => (storeId: string): JumboStore =>
     getters.getStores.filter(
       (jumboStore: JumboStore) => jumboStore.sapStoreID === storeId
     )[0],
-  getStoresByCity: (_, getters) => (cityName: string) =>
+  getStoresByCity: (_, getters) => (cityName: string): JumboStore[] =>
     getters.getStores.filter(
       (jumboStore: JumboStore) =>
         jumboStore.city.toLowerCase() === cityName.toLowerCase()
     ),
-  getStoresBySearchTerm: (_, getters) => (searchTerm: string) =>
+  getStoresBySearchTerm: (_, getters) => (searchTerm: string): JumboStore[] =>
     getters.getStores.filter(
       (jumboStore: JumboStore) =>
         jumboStore.addressName
