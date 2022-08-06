@@ -48,9 +48,13 @@ export const jumboStores = createStore<State>({
         }
 
         return acc;
-      }, new Set());
+      }, new Set<string>());
 
       return citiesSet;
+    },
+    getCitiesByName: (_, getters) => (cityName: string) => {
+      const cities: string[] = Array.from(getters.getCities);
+      return cities.filter((city) => city.toLowerCase().includes(cityName));
     },
     getStores(state): JumboStore[] {
       const jumboStores = state.stores.map((jumboStore) => ({

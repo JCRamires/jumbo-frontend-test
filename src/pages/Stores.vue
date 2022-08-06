@@ -24,7 +24,7 @@ const jumboStores = computed(() =>
 <template>
   <section>
     <div class="prose">
-      <h1 class="font-bold mb-2">Jumbo Stores</h1>
+      <h1 class="text-center md:text-left mb-6">Jumbo Stores</h1>
       <div class="mb-6">
         <label>
           Search
