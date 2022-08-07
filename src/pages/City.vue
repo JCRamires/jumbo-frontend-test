@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
-import { useStore } from "../stores/jumboStores.js";
+import { useStore } from "../store/store";
 
 const route = useRoute();
 const store = useStore();

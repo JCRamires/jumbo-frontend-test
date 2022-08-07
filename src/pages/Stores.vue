@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useStore } from "../stores/jumboStores";
 import debounce from "lodash/debounce";
 import { reactive } from "vue";
 import { computed } from "@vue/reactivity";
 
 import StoresList from "../components/StoresList.vue";
+import { useStore } from "../store/store";
 
 const state = reactive({ searchTerm: "" });
 

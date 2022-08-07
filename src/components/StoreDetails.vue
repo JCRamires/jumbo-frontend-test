@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import cx from "classnames";
-import { JumboStore } from "../stores/jumboStores";
+import { JumboStore } from "../store/types";
 import GoogleMapsIFrame from "./GoogleMapsIFrame.vue";
 
 interface Props {

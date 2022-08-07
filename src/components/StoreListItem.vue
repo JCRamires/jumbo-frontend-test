@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { JumboStore } from "../stores/jumboStores.js";
 import {
   LocationMarkerIcon,
   OfficeBuildingIcon,
   ClockIcon,
 } from "@heroicons/vue/outline";
+import { JumboStore } from "../store/types";
 
 interface Props {
   store: JumboStore;

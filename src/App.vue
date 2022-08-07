@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from "@vue/reactivity";
 import { onMounted } from "vue";
-import { useStore } from "./stores/jumboStores";
 
 import Header from "./components/Header.vue";
+import { useStore } from "./store/store";
 
 const store = useStore();
 
