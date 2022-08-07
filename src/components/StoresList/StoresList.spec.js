@@ -61,6 +61,6 @@ describe("StoresList", () => {
       },
     });
 
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.element).toMatchSnapshot();
   });
 });

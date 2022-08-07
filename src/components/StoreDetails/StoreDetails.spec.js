@@ -35,6 +35,6 @@ describe("StoreDetails", () => {
       },
     });
 
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.element).toMatchSnapshot();
   });
 });

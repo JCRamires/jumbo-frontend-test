@@ -35,6 +35,6 @@ describe("StoreLisItem", () => {
       },
     });
 
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.element).toMatchSnapshot();
   });
 });

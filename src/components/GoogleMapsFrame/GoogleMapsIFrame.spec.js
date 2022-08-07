@@ -11,6 +11,6 @@ describe("GoogleMapsIFrame", () => {
       },
     });
 
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.element).toMatchSnapshot();
   });
 });
