@@ -1,5 +1,7 @@
 <template>
-  <header class="fixed top-0 w-full h-16 bg-primary border-b flex p-2 items-center gap-10">
+  <header
+    class="fixed top-0 w-full h-16 bg-primary border-b flex p-2 items-center gap-10"
+  >
     <router-link to="/">
       <img src="/jumbo-logo.png" class="object-contain h-12" />
     </router-link>

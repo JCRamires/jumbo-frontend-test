@@ -2,7 +2,7 @@
 import { computed } from "@vue/reactivity";
 import { onMounted } from "vue";
 
-import Header from "./components/Header.vue";
+import Header from "./components/Header";
 import { useStore } from "./store/store";
 
 const store = useStore();

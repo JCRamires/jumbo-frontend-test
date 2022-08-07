@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { JumboStore } from '../store/types';
-import StoreListItem from './StoreListItem.vue'
+import { JumboStore } from "../../store/types";
+import StoreListItem from "../StoreListItem";
 
 interface Props {
   stores: JumboStore[];

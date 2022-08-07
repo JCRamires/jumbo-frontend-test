@@ -4,7 +4,7 @@ import {
   OfficeBuildingIcon,
   ClockIcon,
 } from "@heroicons/vue/outline";
-import { JumboStore } from "../store/types";
+import { JumboStore } from "../../store/types";
 
 interface Props {
   store: JumboStore;
