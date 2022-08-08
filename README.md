@@ -2,9 +2,9 @@
 
 This test was built using [Vite](https://vitejs.dev/) and tested with [Vitest](https://vitest.dev/)
 
-You can also find this project deployed on [this github page](https://jcramires.github.io/jumbo-frontend-test/)
+You can also find this project deployed on [this github page](https://jcramires.github.io/jumbo-frontend-test/) or on [this codesandbox link](https://codesandbox.io/s/jumbo-frontend-test-u3xmx3)
 
-## Running this project
+## Running this project locally
 
 - clone this repository
 - `npm install` in the cloned folder
