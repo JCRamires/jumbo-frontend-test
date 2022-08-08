@@ -2,6 +2,8 @@
 
 This test was built using [Vite](https://vitejs.dev/) and tested with [Vitest](https://vitest.dev/)
 
+You can also find this project deployed on [this github page](https://jcramires.github.io/jumbo-frontend-test/)
+
 ## Running this project
 
 - clone this repository
